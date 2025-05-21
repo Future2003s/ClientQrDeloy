@@ -1,6 +1,14 @@
 import NextBundleAnalyzer from "@next/bundle-analyzer";
 import createNextIntlPlugin from "next-intl/plugin";
 
+// ,
+//       {
+//         protocol: "https",
+//         hostname: "47.129.59.2",
+//         port: "4000",
+//         pathname: "/static/**",
+//       },
+
 const withNextIntl = createNextIntlPlugin();
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -11,14 +19,9 @@ const nextConfig = {
         pathname: "/**",
       },
       {
-        protocol: "http",
-        hostname: "47.129.59.2",
-        port: "4000",
+        protocol: "https",
+        hostname: "api.psang.online",
         pathname: "/static/**",
-      },
-      {
-        hostname: "via.placeholder.com",
-        pathname: "/**",
       },
     ],
   },
